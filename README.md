@@ -41,7 +41,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/finalspee
 日志路径：/fs/server.log
 
 ### 开放端口命令
-service iptables start
+service iptables start（CentOS下自动开启）
 iptables -I INPUT -p tcp --dport ssh端口号 -j ACCEPT
 iptables -I OUTPUT -p tcp --sport ssh端口号 -j ACCEPT
 service iptables save
